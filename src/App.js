@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import PageNotFound from "./components/PageNotFound";
 import Welcome from "./components/Welcome";
 import ManageCoursePage from "./components/ManageCoursePage";
+import CreateCourse from "./components/CreateCourse";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Route path="/course" element={<CoursePage />} />
         <Route path="/course/:slug" element={<ManageCoursePage />} />
+        <Route path="/course-create" element={<CreateCourse />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
